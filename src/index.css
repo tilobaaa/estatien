@@ -2,7 +2,7 @@
 
 @theme {
   /* purple colors */
-  --color-purple-60: #ff7a00;
+  --color-purple-60: #703bf7;
   --color-purple-65: #1a64ff;
   --color-purple-70: #ff9533;
   --color-purple-75: #ffca99;
@@ -26,4 +26,8 @@
   --color-grey-40: #666666;
   --color-grey-50: #808080;
   --color-grey-60: #999999;
+}
+
+body{
+  background-color: #141414;
 }
