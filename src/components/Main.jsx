@@ -9,7 +9,9 @@ import bigStarSvg from "../assets/SVGs/biggestStar.svg";
 import smallStarSvg from "../assets/SVGs/smallStar.svg";
 import midStarSvg from "../assets/SVGs/midStar.svg";
 import FeaturesPropertyCard from "./Cards/FeaturesPropertyCard";
-
+import arrowLeftSvg from "../assets/SVGs/arrow-left.svg";
+import arrowRightSvg from "../assets/SVGs/arrow-right.svg";
+import RecommendationCard from "./Cards/RecommendationCard";
 
 const Main = () => {
   return (
@@ -88,6 +90,7 @@ const Main = () => {
               <img src={smallStarSvg} alt="" />
             </div>
 
+            {/* features card */}
             <div>
               <div className="mb-10">
                 <h2 className="text-[1.75rem] font-semibold text-white">
@@ -100,8 +103,47 @@ const Main = () => {
                 </p>
               </div>
               <div>
-                <FeaturesPropertyCard/>
+                <FeaturesPropertyCard />
+                {/* <FeaturesPropertyCard />
+                <FeaturesPropertyCard /> */}
               </div>
+              <div className="border-t-0 border-grey-15 pt-4 flex justify-between px-4">
+                <button>View All Properties</button>
+                <div className="flex gap-[0.62rem] cursor-pointer items-center">
+                  <div className="p-[0.62rem] rounded-full border border-grey-15 bg-grey-10">
+                    <img className="w-6 h-6" src={arrowLeftSvg} alt="" />
+                  </div>
+                  <p>01 of 60</p>
+                  <div className="p-[0.62rem] cursor-pointer rounded-full border border-grey-15 bg-grey-10">
+                    <img src={arrowRightSvg} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* what our clients say  */}
+          <div className="my-12 ">
+            <div className="flex items-start">
+              <img src={bigStarSvg} alt="" />
+              <img src={midStarSvg} alt="" />
+              <img src={smallStarSvg} alt="" />
+            </div>
+            <div className="flex flex-col gap-[0.38rem]">
+              <h2 className="text-[1.75rem] font-semibold">What Our Clients Say</h2>
+              <p className="text-sm font-medium">
+                Read the success stories and heartfelt testimonials from our
+                valued clients. Discover why they chose Estatein for their real
+                estate needs.
+              </p>
+            </div>
+
+            <div className="my-10">
+              <RecommendationCard/>
+            </div>
+            
+            <div>
+
             </div>
           </div>
         </div>

@@ -37,7 +37,24 @@ const FeaturesPropertyCard = () => {
             />
             <p className="text-sm font-medium">4-Bedroom</p>
           </div>
+            <div className="w-[calc(50%-0.44rem)] py-[0.375rem] px-[0.875rem] flex items-center gap-1 rounded-[1.75rem] border border-grey-15 bg-grey-10">
+            <img
+              className="w-[1.375rem] h-[1.0625rem]"
+              src={bedroomSvg}
+              alt=""
+            />
+            <p className="text-sm font-medium">4-Bedroom</p>
+          </div>
         </div>
+      </div>
+      <div className="flex gap-[1.88rem] items-center">
+        <div className="flex flex-col">
+          <p className="text-grey-60 text-sm font-medium">Price</p>
+          <p className="text-xl font-semibold">$550,000</p>
+        </div>
+        <button className="bg-purple-60 rounded-lg px-5 py-[0.875rem] text-sm font-medium">
+          View Property Deals 
+        </button>
       </div>
     </div>
   );
