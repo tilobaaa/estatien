@@ -130,7 +130,9 @@ const Main = () => {
               <img src={smallStarSvg} alt="" />
             </div>
             <div className="flex flex-col gap-[0.38rem]">
-              <h2 className="text-[1.75rem] font-semibold">What Our Clients Say</h2>
+              <h2 className="text-[1.75rem] font-semibold">
+                What Our Clients Say
+              </h2>
               <p className="text-sm font-medium">
                 Read the success stories and heartfelt testimonials from our
                 valued clients. Discover why they chose Estatein for their real
@@ -139,12 +141,100 @@ const Main = () => {
             </div>
 
             <div className="my-10">
-              <RecommendationCard/>
+              <RecommendationCard />
+              <hr className=" border-grey-15 mt-[1.88rem] mb-4" />
+              <div className="flex justify-between items-center  ">
+                <button className="py-3.5 px-5 rounded-lg border border-grey-15 bg-grey-10 text-sm font-medium cursor-pointer">
+                  View All Testimonials
+                </button>
+                <div className="flex items-center">
+                  <div className="p-2.5 border border-grey-15 w-fit rounded-full cursor-pointer">
+                    <img
+                      className="w-6 h-6 flex items-center justify-center "
+                      src={arrowLeftSvg}
+                      alt=""
+                    />
+                  </div>
+                  <p>
+                    <span>01</span> of 10
+                  </p>
+                  <div className="p-2.5 border border-grey-15 w-fit rounded-full cursor-pointer">
+                    <img
+                      className="w-6 h-6 flex items-center justify-center "
+                      src={arrowRightSvg}
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div>
+          </div>
 
+          {/* frequently asked questions */}
+          <div className="">
+            <div className="flex items-start">
+              <img src={bigStarSvg} alt="" />
+              <img src={midStarSvg} alt="" />
+              <img src={smallStarSvg} alt="" />
             </div>
+            <div>
+              <h2 className="text-[1.75rem] font-semibold leading-[150%]">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-grey-60 font-medium text-sm leading-[150%]">
+                Find answers to common questions about Estatein's services,
+                property listings, and the real estate process. We're here to
+                provide clarity and assist you every step of the way.
+              </p>
+            </div>
+            <div className="p-[1.875rem] flex mt-10 py-[1.88rem] flex-col gap-5 rounded-[0.625rem] border border-grey-15 bg-grey-08">
+              <h6 className="text-[1.125rem] font-semibold leading-[150%]">
+                How do I search for properties on Estatein?
+              </h6>
+              <p className="text-sm text-grey-60 font-medium tracking-[-0.00525rem] leading-[150%]">
+                Learn how to use our user-friendly search tools to find
+                properties that match your criteria.
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center  mt-[1.88rem] border-t border-grey-15 pt-4">
+              <button>View All FAQs</button>
+              <div className="flex items-center gap-[0.62rem]">
+                <div className="p-2.5 border border-grey-15 w-fit rounded-full cursor-pointer">
+                  <img
+                    className="w-6 h-6 flex items-center justify-center "
+                    src={arrowLeftSvg}
+                    alt=""
+                  />
+                </div>
+                <p>
+                  <span>01</span> of 10
+                </p>
+                <div className="p-2.5 border border-grey-15 w-fit rounded-full cursor-pointer">
+                  <img
+                    className="w-6 h-6 flex items-center justify-center "
+                    src={arrowRightSvg}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/*CTA: start your real estate journey today  */}
+          <div className="flex flex-col gap-[1.88rem] my-[3.12rem] py-[3.12rem] border-y border-y-grey-15">
+            <div>
+              <h2 className="text-[1.75rem] font-semibold leading-[150%] ">Start Your Real Estate Journey Today</h2>
+              <p className="text-grey-60 text-sm font-medium leading-[150%]">
+                Your dream property is just a click away. Whether you're looking
+                for a new home, a strategic investment, or expert real estate
+                advice, Estatein is here to assist you every step of the way.
+                Take the first step towards your real estate goals and explore
+                our available properties or get in touch with our team for
+                personalized assistance.
+              </p>
+            </div>
+            <button className="rounded-lg bg-purple-60 cursor-pointer w-full py-3.5 px-5 text-sm font-medium">Explore Properties</button>
           </div>
         </div>
       </div>
