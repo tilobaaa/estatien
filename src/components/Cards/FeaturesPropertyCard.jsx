@@ -47,7 +47,7 @@ const FeaturesPropertyCard = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-[1.88rem] items-center">
+      <div className="flex gap-[1.88rem] items-center lg:justify-between">
         <div className="flex flex-col">
           <p className="text-grey-60 text-sm font-medium">Price</p>
           <p className="text-xl font-semibold">$550,000</p>
