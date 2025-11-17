@@ -11,6 +11,24 @@ import youtubeSvg from "../assets/SVGs/youtube.svg";
 const Footer = () => {
   return (
     <div className="px-4">
+       <div className="flex flex-col gap-[1.88rem] my-[3.12rem] py-[3.12rem] border-y border-y-grey-15">
+          <div>
+            <h2 className="text-[1.75rem] font-semibold leading-[150%] text-white">
+              Start Your Real Estate Journey Today
+            </h2>
+            <p className="text-grey-60 text-sm font-medium leading-[150%]">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+          <button className="rounded-lg bg-purple-60 cursor-pointer w-full py-3.5 px-5 text-sm font-medium text-white">
+            Explore Properties
+          </button>
+        </div>
       <div className="lg:flex gap-20">
         <div className="flex flex-col gap-5 ">
           <div className="flex items-center">
