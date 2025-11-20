@@ -6,8 +6,11 @@ import capIconPng from "../assets/Images/capIcon.png";
 import ValueCard from "../components/Cards/ValueCard";
 import AchievementsCard from "../components/Cards/AchievementsCard";
 import TeamCard from "../components/Cards/TeamCard";
-import maxMitchPng from '../assets/Images/MaxMitch.png'
-
+import maxMitchPng from "../assets/Images/MaxMitch.png";
+import sarahJohnsonPng from "../assets/Images/sarahJohnson.png";
+import davidBrownPng from "../assets/Images/davidBrown.png";
+import michaelTurnerPng from "../assets/Images/michaelTurner.png";
+import ClientCard from "../components/Cards/ClientCard";
 
 const AboutUs = () => {
   return (
@@ -142,18 +145,57 @@ const AboutUs = () => {
 
       {/* team */}
       <div>
-        <h2 className="text-[28px] font-semibold text-white">
-          Meet the Estatein Team
-        </h2>
-        <p className="font-medium text-sm text-grey-60">
-          At Estatein, our success is driven by the dedication and expertise of
-          our team. Get to know the people behind our mission to make your real
-          estate dreams a reality.
-        </p>
+        <div>
+          <h2 className="text-[28px] font-semibold text-white">
+            Meet the Estatein Team
+          </h2>
+          <p className="font-medium text-sm text-grey-60">
+            At Estatein, our success is driven by the dedication and expertise
+            of our team. Get to know the people behind our mission to make your
+            real estate dreams a reality.
+          </p>
+        </div>
+
+        <div className="my-6 flex flex-col gap-6">
+          <TeamCard
+            name="Max Mitchell"
+            title="Founder"
+            profilePic={maxMitchPng}
+          />
+          <TeamCard
+            name="Sarah Johnson"
+            title="Chief Real Estate Officer"
+            profilePic={sarahJohnsonPng}
+          />
+          <TeamCard
+            name="David Brown"
+            title="Head of Property Management"
+            profilePic={davidBrownPng}
+          />
+          <TeamCard
+            name="Michael Turner"
+            title="Legal Counsel"
+            profilePic={michaelTurnerPng}
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-            <TeamCard name="Max Mitchell" title="Founder" profilePic={maxMitchPng}/>
+      <div>
+        <div>
+          <h2 className="text-[28px] font-semibold text-white">
+            Our Valued Clients
+          </h2>
+          <p className="font-medium text-sm text-grey-60">
+            At Estatein, we have had the privilege of working with a diverse
+            range of clients across various industries. Here are some of the
+            clients we've had the pleasure of serving
+          </p>
+        </div>
+        <div>
+          <ClientCard year='2025' name="ABC Corporation" domain="Commercial Real Estate" category="Luxury Home Development" description="Estatein's expertise in finding the perfect office space for our
+          expanding operations was invaluable. They truly understand our
+          business needs."/>
+        </div>
       </div>
     </div>
   );
